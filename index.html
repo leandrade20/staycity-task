@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<!--
+Feel free to remove, edit, add any scripts, styles, folders or otherwise,
+that you would like to use in the task.
+The structure of the project can be changed in whatever way works best for you, so if
+you feel your regular structure also helps demonstrate how you like to work, feel free
+to add/edit files and folders as you see fit e.g delete normalize.css or clear all
+styles in main.css and start from scratch.
+
+The choices to be made are yours, just as long as the end goal of the task is completed.
+
+NB: Tabs / spaces - also your choice.
+-->
+
+<html class="" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <title>Task</title>
+    <!-- ENTER YOUR NAME IN THE TITLE SPACE -->
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+
+    <meta name="theme-color" content="#fafafa" />
+  </head>
+  <body>
+    <!--[if IE]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+      </p>
+    <![endif]-->
+    <header>
+      <img src="staycity-aparthotels-logo.webp" alt="" />
+    </header>
+    <div class="wrap">
+      <div id="myslider">
+        <img src="img/img2.jpg" />
+        <img src="img/img1.jpg" />
+        <img src="img/img3.webp" />
+      </div>
+
+      <section class="absolute-center">
+        <h1>Welcome to Staycity</h1>
+        <h2>Choose where you would like to book an apartment!</h2>
+        <form class="search-form" action="result.php" method="POST">
+          <fieldset>
+            <label>City</label>
+            <select id="city-dropdown" name="city-dropdown">
+              <option value="">Choose a City</option>
+            </select>
+          </fieldset>
+          <fieldset>
+            <label>Apartment</label>
+            <select id="apartment-dropdown" name="apartment-dropdown">
+              <option value="">Choose an Apartment</option>
+            </select>
+          </fieldset>
+          <fieldset>
+            <label>Check-in</label>
+            <input
+              class="datepicker"
+              type="text"
+              name="check-in-date"
+              min=""
+              max=""
+              placeholder="Check-in"
+            />
+          </fieldset>
+          <fieldset>
+            <label>Check-out</label>
+            <input
+              class="datepicker"
+              type="text"
+              name="check-out-date"
+              min=""
+              max=""
+              placeholder="Check-out"
+            />
+          </fieldset>
+          <fieldset>
+            <input type="submit" value="Search" />
+          </fieldset>
+        </form>
+      </section>
+    </div>
+    <script src="js/vendor/modernizr-3.7.1.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      window.jQuery ||
+        document.write(
+          '<script src="js/vendor/jquery-3.4.1.min.js"><\/script>'
+        );
+    </script>
+    <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="js/slider.js"></script>
+    <script>
+      var imgSlider = simpleslider.getSlider({
+        container: document.getElementById("myslider"),
+        prop: "opacity",
+        unit: "",
+        init: 0,
+        show: 1,
+        end: 0,
+      });
+    </script>
+  </body>
+</html>
